@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>
+if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+  location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+}
+</script>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <title>Karra Chanakya — Forward Deployed Engineer &amp; Agentforce Specialist</title>
 <meta name="description" content="Karra Chanakya — Salesforce Certified Agentforce Specialist, Forward Deployed Engineer, and B.Tech CSE undergrad building enterprise agentic workflows, full-stack microservices, and solving 500+ LeetCode problems." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
